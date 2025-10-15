@@ -1,0 +1,163 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #eef5ff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.form-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-container label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 12pt;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  font-size: 12pt;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #357ac8;
+}
+
+.poster {
+  width: 794px;
+  height: 1123px;
+  background-color: #fff;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 16px;
+}
+
+.committee-box,
+.project-box,
+.purpose-box,
+.period-box,
+.content-table-box,
+.comment-box {
+  padding: 16px 24px;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.committee-box {
+  background-color: #dbeeff;
+  text-align: center;
+  padding: 20px 28px; /* ← 少し余白を増やして強調 */
+}
+
+.committee-box h1 {
+  font-size: 20pt; /* ← 18ptから20ptにアップ */
+  margin: 0;
+}
+
+.project-box {
+  background-color: #fff0d5;
+  text-align: center;
+}
+
+.project-box h2 {
+  font-size: 14pt;
+  margin: 0;
+}
+
+.purpose-box {
+  background-color: #fff8d8;
+}
+
+.purpose-box h3 {
+  font-size: 13pt;
+  margin-bottom: 8px;
+}
+
+.purpose-box p {
+  font-size: 11pt;
+  line-height: 1.4;
+}
+
+.period-box {
+  background-color: #e8fbe8;
+}
+
+.content-table-box {
+  background-color: #f0f0f0;
+}
+
+.comment-box {
+  background-color: #ffecec;
+}
+
+h3 {
+  font-size: 14pt;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #aaa;
+}
+
+p {
+  font-size: 12pt;
+  line-height: 1.5;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12pt;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: #e0e0e0;
+  width: 30%;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.period-box {
+  flex: 1;
+  min-height: 200px;
+}
+
+.content-table-box {
+  flex: 2;
+  min-height: 200px;
+}
