@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>委員会ポスター作成ツール</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  body { background-color: #eef5ff; font-family: Arial; }
+  /* 他のCSSもここに貼り付けてOK */
+</style>
+
+</head>
+<body>
+  <div class="form-container">
+    <label>委員会名</label><input id="committee" type="text" placeholder="〇〇委員会">
+    <label>企画名</label><input id="project" type="text" placeholder="ここに企画名の入力">
+    <label>目的</label><textarea id="purpose" rows="3" placeholder="ここに目的の入力（例：学生全体で交流を深める）"></textarea>
+    <label>期間</label><input id="period" type="text" placeholder="ここに期間の入力（例：10月〜12月）">
+    <label>だれが</label><input id="who" type="text" placeholder="ここに入力（例：あいさつ委員会員）">
+    <label>いつ</label><input id="when" type="text" placeholder="ここに入力（例：毎週月・水・金の朝）">
+    <label>どこで</label><input id="where" type="text" placeholder="ここに入力（例：昇降口前）">
+    <label>どのように</label><input id="how" type="text" placeholder="ここに入力（例：元気よく声をかける）">
+    <label>コメント</label><textarea id="comment" rows="2" placeholder="ここにコメントの入力（例：みなさんのご参加をよろしくお願いします！）"></textarea>
+    <button onclick="downloadPoster()">画像として保存</button>
+  </div>
+
+  <div id="poster" class="poster">
+    <div class="committee-box"><h1 id="committeeText">〇〇委員会</h1></div>
+    <div class="project-box"><h2 id="projectText">企画名：ここに企画名の入力</h2></div>
+    <div class="purpose-box"><h3>目的</h3><p id="purposeText">ここに目的の入力（例：学生全体で交流を深める）</p></div>
+    <div class="columns">
+      <div class="period-box"><h3>期間</h3><p id="periodText">ここに期間の入力（例：10月〜12月）</p></div>
+      <div class="content-table-box">
+        <h3>内容</h3>
+        <table>
+          <tr><th>だれが</th><td id="whoText">ここに入力（例：あいさつ委員会員）</td></tr>
+          <tr><th>いつ</th><td id="whenText">ここに入力（例：毎週月・水・金の朝）</td></tr>
+          <tr><th>どこで</th><td id="whereText">ここに入力（例：昇降口前）</td></tr>
+          <tr><th>どのように</th><td id="howText">ここに入力（例：元気よく声をかける）</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="comment-box"><h3>委員会からのコメント</h3><p id="commentText">ここにコメントの入力（例：みなさんのご参加をよろしくお願いします！）</p></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
